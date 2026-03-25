@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About page for a student engineer portfolio with strengths, values, and internship positioning."
+    />
+    <title>About | Student Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark brand-mark--link" href="projects.html">
+          <span class="brand-mark__monogram" aria-hidden="true">SE</span>
+          <div>
+            <p class="brand-mark__label">Student Engineer</p>
+            <p class="brand-mark__subtle">Portfolio</p>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="projects.html">Projects</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-main">
+        <section class="page-hero section">
+          <div class="page-hero__copy reveal">
+            <p class="eyebrow">About</p>
+            <h1>Professional, curious, and motivated by clear product outcomes.</h1>
+            <p class="hero__lede">
+              I’m a student engineer building a foundation in software systems,
+              product thinking, and collaborative execution. My best work happens
+              where user experience, technical structure, and communication all matter.
+            </p>
+          </div>
+          <aside class="page-hero__aside reveal reveal--delay">
+            <article class="panel panel--accent">
+              <p class="panel__title">Profile Snapshot</p>
+              <ul class="detail-list">
+                <li>Student engineer preparing for internships and early-career roles</li>
+                <li>Strong interest in clean interfaces and dependable implementation</li>
+                <li>Comfortable learning quickly and applying feedback fast</li>
+              </ul>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section section--tight">
+          <div class="about-grid">
+            <article class="panel reveal">
+              <p>
+                I care about building software that feels calm, clear, and useful.
+                That means thinking beyond whether code works and paying attention
+                to how it reads, how it scales, and how it serves the person using it.
+              </p>
+              <p>
+                In team settings, I bring structure, strong communication, and
+                willingness to take ownership. I like projects where there is room
+                to solve real problems, sharpen execution, and learn from engineers
+                with high standards.
+              </p>
+            </article>
+            <article class="panel reveal reveal--delay">
+              <p class="panel__title">What I bring</p>
+              <ul class="detail-list">
+                <li>Thoughtful UI instincts grounded in practical implementation</li>
+                <li>Clear writing and presentation that help teams stay aligned</li>
+                <li>Interest in maintainable systems instead of quick one-off fixes</li>
+                <li>Reliable follow-through from concept to polished delivery</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="spotlight-grid">
+            <article class="panel reveal">
+              <p class="panel__title">How I work</p>
+              <ul class="detail-list">
+                <li>Break ambiguity into smaller, concrete decisions</li>
+                <li>Prefer clean systems over avoidable complexity</li>
+                <li>Use feedback to improve both product and process</li>
+              </ul>
+            </article>
+            <article class="panel reveal reveal--delay">
+              <p class="panel__title">What I am looking for</p>
+              <ul class="detail-list">
+                <li>Internships or co-ops with meaningful engineering ownership</li>
+                <li>Teams that value rigor, mentorship, and shipping quality work</li>
+                <li>Opportunities where technical growth and product impact overlap</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">Next</p>
+            <h2>See the technical range behind the portfolio.</h2>
+            <p>
+              Explore the skills page for the tools, habits, and areas of engineering
+              focus that support this work.
+            </p>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="skills.html">View Skills</a>
+            <a class="button button--secondary" href="experience.html">Experience</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-grid__title">Student Engineer Portfolio</p>
+            <p class="footer-grid__note">
+              Replace the profile copy with your own story, strengths, and goals.
+            </p>
+          </div>
+          <div class="footer-grid__links">
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience and education page for a student engineer portfolio."
+    />
+    <title>Experience | Student Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark brand-mark--link" href="projects.html">
+          <span class="brand-mark__monogram" aria-hidden="true">SE</span>
+          <div>
+            <p class="brand-mark__label">Student Engineer</p>
+            <p class="brand-mark__subtle">Portfolio</p>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="experience.html" aria-current="page">Experience</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-main">
+        <section class="page-hero section">
+          <div class="page-hero__copy reveal">
+            <p class="eyebrow">Experience</p>
+            <h1>Signals that matter for internships and early-career engineering roles.</h1>
+            <p class="hero__lede">
+              Use this page to show where your technical growth comes from: coursework,
+              team projects, leadership, and proof that you can take responsibility
+              and move work forward.
+            </p>
+          </div>
+          <aside class="page-hero__aside reveal reveal--delay">
+            <article class="panel panel--accent">
+              <p class="panel__title">At a glance</p>
+              <ul class="detail-list">
+                <li>Education with clear graduation timing</li>
+                <li>Project or leadership experience with ownership</li>
+                <li>Independent learning that shows initiative</li>
+              </ul>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section section--tight">
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-item__meta">
+                <p class="timeline-item__date">2024 - Present</p>
+                <p class="timeline-item__type">Education</p>
+              </div>
+              <div class="timeline-item__content">
+                <h3>Bachelor’s Degree in Engineering or Computer Science</h3>
+                <p>
+                  Add your university, expected graduation date, GPA if relevant,
+                  and any standout academic focus areas.
+                </p>
+                <p class="timeline-item__note">
+                  Suggested coursework: data structures, algorithms, databases,
+                  software engineering, human-computer interaction.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal reveal--delay">
+              <div class="timeline-item__meta">
+                <p class="timeline-item__date">Recent</p>
+                <p class="timeline-item__type">Experience</p>
+              </div>
+              <div class="timeline-item__content">
+                <h3>Technical Team Project or Student Organization Role</h3>
+                <p>
+                  Summarize the environment, your responsibilities, and how you improved
+                  execution, delivery speed, or team clarity.
+                </p>
+                <p class="timeline-item__note">
+                  Focus on ownership, collaboration, and measurable contributions.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal reveal--long">
+              <div class="timeline-item__meta">
+                <p class="timeline-item__date">Ongoing</p>
+                <p class="timeline-item__type">Growth</p>
+              </div>
+              <div class="timeline-item__content">
+                <h3>Independent Learning and Personal Builds</h3>
+                <p>
+                  Use this slot for hackathons, technical clubs, certifications,
+                  or side projects that demonstrate initiative outside coursework.
+                </p>
+                <p class="timeline-item__note">
+                  Replace this with a concrete proof point whenever possible.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="about-grid">
+            <article class="panel reveal">
+              <p class="panel__title">Coursework and focus areas</p>
+              <ul class="tag-list" aria-label="Suggested coursework and focus areas">
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Databases</li>
+                <li>Software Engineering</li>
+                <li>Systems</li>
+                <li>Human-Computer Interaction</li>
+              </ul>
+            </article>
+            <article class="panel reveal reveal--delay">
+              <p class="panel__title">What recruiters should see here</p>
+              <ul class="detail-list">
+                <li>Clear timeline with concrete, credible commitments</li>
+                <li>Responsibilities that imply trust and initiative</li>
+                <li>Proof that you can learn, build, and collaborate consistently</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">Next</p>
+            <h2>Make it easy for someone to reach out after scanning the portfolio.</h2>
+            <p>
+              The contact page keeps outreach simple with static-safe links for email,
+              GitHub, and LinkedIn.
+            </p>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="contact.html">Contact</a>
+            <a class="button button--secondary" href="projects.html">Back to Projects</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-grid__title">Student Engineer Portfolio</p>
+            <p class="footer-grid__note">
+              Replace placeholders with concrete dates, organizations, and outcomes.
+            </p>
+          </div>
+          <div class="footer-grid__links">
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

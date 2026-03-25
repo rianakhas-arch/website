@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact page for a student engineer portfolio with email and social links."
+    />
+    <title>Contact | Student Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark brand-mark--link" href="projects.html">
+          <span class="brand-mark__monogram" aria-hidden="true">SE</span>
+          <div>
+            <p class="brand-mark__label">Student Engineer</p>
+            <p class="brand-mark__subtle">Portfolio</p>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-main">
+        <section class="page-hero section">
+          <div class="page-hero__copy reveal">
+            <p class="eyebrow">Contact</p>
+            <h1>Let’s build something useful and well-crafted.</h1>
+            <p class="hero__lede">
+              I’m currently open to internships, co-ops, and early-career engineering
+              opportunities. If you’re looking for a student engineer who values
+              clarity, polish, and momentum, I’d be glad to connect.
+            </p>
+          </div>
+          <aside class="page-hero__aside reveal reveal--delay">
+            <article class="panel panel--accent">
+              <p class="panel__title">Best fit opportunities</p>
+              <ul class="detail-list">
+                <li>Engineering internships and co-op placements</li>
+                <li>Product-minded teams with strong mentorship</li>
+                <li>Roles that value careful execution and communication</li>
+              </ul>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section section--tight">
+          <div class="contact-grid">
+            <div class="panel panel--accent reveal">
+              <p>
+                The fastest way to reach me is by email. You can also review more of my
+                work on GitHub or connect professionally on LinkedIn.
+              </p>
+              <a class="button button--primary button--inline" href="mailto:you@example.com">
+                Email Me
+              </a>
+            </div>
+            <div class="contact-links reveal reveal--delay">
+              <a href="mailto:you@example.com">you@example.com</a>
+              <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <p class="contact-links__note">Resume available on request</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="about-grid">
+            <article class="panel reveal">
+              <p class="panel__title">When reaching out</p>
+              <ul class="detail-list">
+                <li>Mention the role, team, or project context</li>
+                <li>Share any timeline or interview details if relevant</li>
+                <li>Include the best place for follow-up communication</li>
+              </ul>
+            </article>
+            <article class="panel reveal reveal--delay">
+              <p class="panel__title">What to customize</p>
+              <ul class="detail-list">
+                <li>Replace placeholder email and social links</li>
+                <li>Add a resume download only if you want one publicly available</li>
+                <li>Optionally add your city, timezone, or work authorization details</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">Browse Again</p>
+            <h2>Start from the work, then scan the rest of the portfolio in sequence.</h2>
+            <p>
+              The site is designed so recruiters can enter on projects and move through
+              about, skills, experience, and contact without friction.
+            </p>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="projects.html">Projects</a>
+            <a class="button button--secondary" href="about.html">About</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-grid__title">Student Engineer Portfolio</p>
+            <p class="footer-grid__note">
+              Keep the contact paths simple so every call to action works on static hosting.
+            </p>
+          </div>
+          <div class="footer-grid__links">
+            <a href="mailto:you@example.com">Email</a>
+            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
