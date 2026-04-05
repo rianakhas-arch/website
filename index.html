@@ -4,34 +4,178 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      http-equiv="refresh"
-      content="0; url=projects.html"
-    />
-    <meta
       name="description"
-      content="Redirecting to the student engineer portfolio projects page."
+      content="Academic engineering design portfolio with home, position, projects, and CTMF sections."
     />
-    <title>Redirecting | Student Engineer Portfolio</title>
+    <title>Home | Engineering Design Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="canonical" href="projects.html" />
-    <script>
-      window.location.replace("projects.html");
-    </script>
   </head>
-  <body class="redirect-page">
-    <main class="redirect-card">
-      <p class="eyebrow">Redirecting</p>
-      <h1>Opening the projects page.</h1>
-      <p>
-        If you are not redirected automatically,
-        <a href="projects.html">continue to the portfolio</a>.
-      </p>
-    </main>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark brand-mark--link" href="index.html">
+          <span class="brand-mark__monogram" aria-hidden="true">ED</span>
+          <div>
+            <p class="brand-mark__label">Engineering Design</p>
+            <p class="brand-mark__subtle">Portfolio</p>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">Position</a>
+          <a href="projects.html">Projects</a>
+          <a href="design-portfolio.html">CTMFs</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-main">
+        <section class="hero section">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Academic Portfolio</p>
+            <h1>
+              Your Name,
+              <span>documenting engineering design practice, evidence, and reflection.</span>
+            </h1>
+            <p class="hero__lede">
+              This portfolio is organized as an academic engineering design record.
+              It brings together a design position statement, curated project evidence,
+              and CTMF references that show how decisions were framed, tested, and communicated.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="about.html">Read Position</a>
+              <a class="button button--secondary" href="projects.html">View Projects</a>
+              <a class="button button--secondary" href="design-portfolio.html">Browse CTMFs</a>
+            </div>
+            <ul class="hero__highlights" aria-label="Portfolio overview">
+              <li>Built for academic review, PDF export, and future portfolio reuse</li>
+              <li>Structured around position, project evidence, and CTMF-supported reflection</li>
+              <li>Designed so placeholder text and visuals can be replaced quickly later</li>
+            </ul>
+          </div>
+          <aside class="hero__card reveal reveal--delay">
+            <div class="portrait-card portrait-card--placeholder" aria-label="Profile image placeholder">
+              <div class="portrait-card__halo"></div>
+              <div class="portrait-card__monogram portrait-card__monogram--placeholder">IMG</div>
+              <p class="portrait-card__caption">Profile image placeholder</p>
+              <p class="portrait-card__detail">
+                Paste a headshot, sketch, or personal mark here later.
+              </p>
+            </div>
+            <div class="stats-card">
+              <div>
+                <p class="stats-card__value">4</p>
+                <p class="stats-card__label">Primary sections</p>
+              </div>
+              <div>
+                <p class="stats-card__value">3+</p>
+                <p class="stats-card__label">Projects to document</p>
+              </div>
+              <div>
+                <p class="stats-card__value">12</p>
+                <p class="stats-card__label">Starter CTMF slots</p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section section--tight">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Portfolio Overview</p>
+            <h2>Replace these blocks with your own framing, priorities, and evidence trail.</h2>
+          </div>
+          <div class="panel panel--accent reveal">
+            <p class="panel__title">Overview paragraph placeholder</p>
+            <p>
+              Paste a short academic introduction here. This paragraph should explain
+              what this portfolio includes, why the selected projects matter, and how
+              the reader should understand the relationship between your position
+              statement, project evidence, and CTMF references.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="overview-grid">
+            <article class="panel reveal">
+              <p class="panel__title">Position</p>
+              <p>
+                Use the Position page for your long-form engineering design position
+                statement, current context, and the design values you want an assessor
+                or reader to notice.
+              </p>
+              <a class="text-link" href="about.html">Go to Position</a>
+            </article>
+            <article class="panel reveal reveal--delay">
+              <p class="panel__title">Projects</p>
+              <p>
+                Use the Projects page for curated summaries of design work, image and
+                artifact placeholders, and links to reusable full project pages.
+              </p>
+              <a class="text-link" href="projects.html">Go to Projects</a>
+            </article>
+            <article class="panel reveal reveal--long">
+              <p class="panel__title">CTMFs</p>
+              <p>
+                Use the CTMF page for categorized methods, tools, and framework notes
+                tied to purpose, evidence, and reflection.
+              </p>
+              <a class="text-link" href="design-portfolio.html">Go to CTMFs</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">Next</p>
+            <h2>Start by defining the design position behind the evidence.</h2>
+            <p>
+              The Position page is the anchor for the rest of the portfolio. It should
+              state how you currently understand engineering design and how the later
+              project evidence should be read.
+            </p>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="about.html">Open Position</a>
+            <a class="button button--secondary" href="projects.html">Skip to Projects</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-grid__title">Engineering Design Portfolio</p>
+            <p class="footer-grid__note">
+              Structured for academic use first, with enough flexibility to adapt into a broader portfolio later.
+            </p>
+          </div>
+          <div class="footer-grid__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Position</a>
+            <a href="projects.html">Projects</a>
+            <a href="design-portfolio.html">CTMFs</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
