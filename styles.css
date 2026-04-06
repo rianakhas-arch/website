@@ -897,9 +897,5 @@ code {
   .timeline-item__content h3 {
     font-size: 1.75rem;
   }
-  .section--tight .project-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  justify-content: center;
-}
+
 }
