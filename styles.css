@@ -265,6 +265,14 @@ code {
   margin: 2rem 0 1.5rem;
 }
 
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -342,6 +350,11 @@ code {
   background: var(--color-accent);
 }
 
+.detail-list--spacious {
+  display: grid;
+  gap: 0.55rem;
+}
+
 .hero__card {
   display: grid;
   gap: 1rem;
@@ -366,6 +379,15 @@ code {
   min-height: 27rem;
   display: grid;
   align-content: space-between;
+}
+
+.portrait-card__image {
+  width: 100%;
+  height: 100%;
+  min-height: 23rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: calc(var(--radius-lg) - 8px);
 }
 
 .portrait-card__halo {
@@ -466,10 +488,49 @@ code {
   padding: 1.6rem;
 }
 
+.statement-box {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border: 1px solid rgba(217, 207, 193, 0.85);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(255, 248, 238, 0.78));
+  box-shadow: var(--shadow-soft);
+}
+
+.statement-box p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+
+.statement-box p + p {
+  margin-top: 1.5rem;
+}
+
 .panel--accent {
   background:
     linear-gradient(160deg, rgba(110, 139, 123, 0.14), rgba(255, 250, 242, 0.92)),
     linear-gradient(180deg, rgba(255, 252, 246, 0.92), rgba(255, 248, 238, 0.78));
+}
+
+.panel--quote {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.panel--quote p {
+  margin: 0;
+}
+
+.panel--quote strong {
+  display: block;
+  max-width: 20ch;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-style: italic;
+  line-height: 1.15;
 }
 
 .panel__title {
@@ -483,6 +544,10 @@ code {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
+}
+
+.project-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card {
@@ -519,6 +584,42 @@ code {
 .project-card h3 {
   font-size: 2.1rem;
   margin-bottom: 1rem;
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0.4rem 0 1.15rem;
+  padding: 0.7rem 1.05rem;
+  border: 1px solid rgba(110, 139, 123, 0.22);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 250, 242, 0.9);
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(31, 36, 33, 0.06);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+.project-card__link::after {
+  content: "\2192";
+  font-size: 0.95rem;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(110, 139, 123, 0.35);
+  background: rgba(110, 139, 123, 0.12);
+  box-shadow: 0 14px 30px rgba(31, 36, 33, 0.1);
 }
 
 .project-card__impact,
@@ -582,6 +683,16 @@ code {
   padding-bottom: 2.5rem;
 }
 
+.page-hero--compact {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.page-hero--compact .page-hero__content h1,
+.page-hero--compact .page-hero__copy h1 {
+  max-width: none;
+  width: 100%;
+}
+
 .page-hero__copy {
   display: grid;
   align-content: start;
@@ -614,6 +725,57 @@ code {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.2rem;
+}
+
+.ctmf-stack {
+  display: grid;
+  gap: 1.2rem;
+  max-width: 72rem;
+}
+
+.ctmf-entry {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.ctmf-entry h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.ctmf-entry p:last-child {
+  margin: 0;
+}
+
+.ctmf-stack--inside {
+  max-width: none;
+  margin-top: 2rem;
+  gap: 3.2rem;
+}
+
+.ctmf-rich {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.ctmf-rich .panel__title {
+  margin-bottom: 0.15rem;
+  color: var(--color-muted);
+}
+
+.ctmf-rich h3 {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(1.65rem, 2.4vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.ctmf-rich p:last-child {
+  margin: 0;
 }
 
 .cta-banner {

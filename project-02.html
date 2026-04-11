@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reusable project detail template for an engineering design portfolio."
+    />
+    <title>Bridge Project | Engineering Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark brand-mark--link" href="index.html">
+          <span class="brand-mark__monogram" aria-hidden="true">ED</span>
+          <div>
+            <p class="brand-mark__label">Engineering Design</p>
+            <p class="brand-mark__subtle">Portfolio</p>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">Position</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-main">
+        <section class="page-hero page-hero--compact reveal is-visible">
+          <div class="page-hero__content">
+            <p class="eyebrow">Project 02</p>
+            <h1>Bridge Project</h1>
+            <p class="lede">
+              This project involved designing and constructing a matboard
+              bridge capable of supporting a moving train load. The goal was to
+              maximize structural efficiency by achieving high stiffness and
+              load-carrying capacity while minimizing material use and failure
+              risks such as buckling. Through iterative design, analysis, and
+              testing, the final solution focused on a closed box-girder
+              structure to improve strength and stability.
+            </p>
+
+            <div class="panel panel--accent" style="margin-top: 1.5rem; max-width: 760px;">
+              <p class="panel__title">Quick Facts</p>
+              <ul class="detail-list">
+                <li><strong>Course:</strong> CIV102</li>
+                <li><strong>Focus:</strong> Structural design, load analysis, and material efficiency</li>
+                <li><strong>Final concept:</strong> Closed box-girder bridge made from folded matboard</li>
+                <li><strong>Core issue:</strong> Preventing structural failure (buckling, bending) while maximizing strength-to-weight ratio</li>
+                <li><strong>Team:</strong> Ashlyn Lee, Ana Victoria Diaz Garcia, Riana Khasanova</li>
+              </ul>
+            </div>
+            <div class="button-row">
+              <a class="button button--primary" href="projects.html">Back to Projects</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal is-visible">
+          <details class="panel panel--feature" style="max-width: 1100px; margin-left: 0; margin-right: auto;">
+            <summary
+              style="
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 1.1rem;
+                list-style: none;
+                display: inline-block;
+                padding: 0.85rem 1.25rem;
+                border-radius: 999px;
+                border: 1px solid rgba(64, 82, 68, 0.2);
+                background: rgba(255,255,255,0.7);
+                margin-bottom: 1rem;
+              "
+            >
+              One-Pager
+            </summary>
+
+            <div style="margin-top: 1rem;">
+              <img
+                src="bridge-one-pager.png"
+                alt="Bridge Project one-pager"
+                style="width: min(88%, 960px); height: auto; display: block; margin: 0 auto; border-radius: 24px;"
+              />
+            </div>
+          </details>
+        </section>
+
+        <section class="section section--tight reveal is-visible">
+          <div class="project-grid project-grid--two">
+            <article class="panel">
+              <p class="panel__title">Opportunity</p>
+              <h2>Problem and Stakeholders</h2>
+              <p>
+                This project focused on designing a matboard bridge capable of
+                safely supporting a moving train load while operating under
+                strict material and geometric constraints. The materials that
+                were allowed were a sheet of matboard and 2 small packs of
+                cement glue. The primary challenge was to maximize stiffness
+                and load-carrying capacity while minimizing mass and preventing
+                structural failure modes such as buckling and bending. The
+                stakeholders include the course instructors, who defined the
+                performance criteria and constraints, and the design team, who
+                were responsible for developing a reliable and efficient
+                solution. The problem mattered within this context because it
+                required translating theoretical structural concepts into a
+                physical system that could perform under real loading
+                conditions, highlighting the importance of both analysis and
+                practical construction considerations.
+              </p>
+              <h2 style="margin-top: 2.2rem;">Objectives</h2>
+              <ul class="detail-list detail-list--spacious">
+                <li>Maximize load capacity: support highest possible load (N) relative to mass (kg)</li>
+                <li>Limit deflection: minimize midspan deflection (mm) under load</li>
+                <li>Prevent failure: no buckling or structural instability below target load (N)</li>
+                <li>Maintain material constraints: use only 1 matboard sheet and 2 glue packs</li>
+                <li>Ensure reliability: no premature failure under full test load (N)</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <p class="panel__title">Design Process</p>
+              <h2>How the concept was developed</h2>
+              <p>
+                When initially approaching the design problem, we explored a
+                range of possible bridge configurations with the goal of
+                maximizing load-carrying capacity while minimizing material
+                use. Early concepts included simpler open cross-sections and
+                folded geometries, but these approaches were quickly
+                identified as being more susceptible to buckling and lacking
+                sufficient stiffness. This highlighted the need to prioritize
+                structural efficiency and stability in the design.
+              </p>
+              <p>
+                During the
+                concept development phase, we analyzed different
+                cross-sectional configurations and evaluated their ability to
+                resist bending and buckling under load. Through comparison and
+                structural reasoning, we recognized that closed sections
+                provide significantly greater stiffness relative to their
+                weight. This led to a key design decision to adopt a
+                box-girder configuration, which uses a rectangular hollow
+                cross-section to improve resistance to both bending and
+                torsion.
+              </p>
+              <p>
+                As the design progressed, further refinements were
+                made to address specific structural weaknesses. The top plate
+                was double-laminated to better resist compressive stresses,
+                while internal diaphragms were introduced to reduce
+                unsupported lengths and improve overall stability. These
+                decisions were guided by considering trade-offs between
+                structural performance, material use, and constructability.
+              </p>
+              <p>
+                To
+                validate the design, we moved into construction and testing.
+                The process revealed practical challenges, such as maintaining
+                precision in folding and ensuring consistent glue
+                distribution, which affected the structural integrity of the
+                bridge. Addressing these challenges required careful attention
+                to fabrication details and adjustments to improve reliability.
+                Through this iterative process of evaluation and refinement,
+                the final design evolved into a more optimized and stable
+                structure capable of achieving improved performance under load.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight reveal is-visible">
+          <div class="project-grid project-grid--two">
+            <article class="panel">
+              <p class="panel__title">Final Design</p>
+              <h2>Recommended concept</h2>
+              <p>
+                The final design is a closed box-girder bridge constructed from folded matboard, using a rectangular hollow cross-section to maximize stiffness and resistance to bending and torsion. The design incorporates a double-laminated top plate to resist compressive stresses and internal diaphragms to improve stability by reducing unsupported lengths. This configuration was selected because it provided the best balance between structural performance, material efficiency, and constructability.
+              </p>
+            </article>
+
+            <article class="panel">
+              <p class="panel__title">Results</p>
+              <h2>Evidence from testing</h2>
+              <ul class="detail-list">
+                <li>The bridge supported significant load, confirming that the box-girder design provided high stiffness and effective load distribution.</li>
+                <li>Failure occurred at the splice region, highlighting the importance of precise fabrication and strong joints.</li>
+                <li>Overall, testing showed that closed cross-sections outperform open designs in resisting bending and buckling, validating the final design choice.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight reveal is-visible">
+          <div class="project-grid project-grid--two">
+            <article class="panel">
+              <p class="panel__title">Reflection</p>
+              <h2>What I learned</h2>
+              <p>
+                This project reinforced that engineering design decisions must be grounded in both analysis and physical testing. While the final concept appeared structurally sound in theory and was supported by calculations, prototyping and construction revealed practical challenges such as material limitations and fabrication precision that significantly affected performance. This project really highlighted the importance of precision in implementation. Since the materials were limited it was important to measure everything perfectly, as else there would not be enough material left. Moreover, small inconsistencies in glue distribution or folding accuracy had noticeable impacts on structural reliability, emphasizing that design quality depends not only on the concept itself, but also on how accurately it is executed.
+
+              </p>
+            </article>
+
+            <article class="panel">
+              <p class="panel__title">Connection to my position</p>
+              <h2>How this reflects my design approach</h2>
+              <p>
+                This project reflects my understanding of engineering design as a nonlinear and evolving process shaped by both analysis and iteration. While initial decisions were guided by structural reasoning, the design direction continued to evolve through testing and construction, reinforcing that progress does not follow a fixed sequence.
+
+              </p>
+              <p>
+                The shift from open-section concepts to a closed box-girder configuration demonstrates how revisiting earlier assumptions can lead to more effective solutions. This aligns with my view that problem-solving in engineering requires adaptability and a willingness to refine decisions as new insights emerge.
+
+              </p>
+              <p>
+                Additionally, this project highlighted that engineering design is often messy and unpredictable. Even when significant time is invested in theoretical calculations and research, it does not guarantee smooth execution. During construction, unforeseen challenges and material constraints affected the final outcome, despite having a well-developed design. This reinforced my understanding that consistency in planning does not ensure perfect results, and that effective design requires responding to uncertainty as it arises.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal is-visible">
+          <article class="panel">
+            <p class="panel__title">CTMFs Used</p>
+            <h2>Key concepts, tools, models, and frameworks</h2>
+
+            <div class="ctmf-stack ctmf-stack--inside">
+              <div class="ctmf-rich">
+                <p class="panel__title">Represent</p>
+                <h3>CAD Modelling</h3>
+                <p>
+                  CAD modelling is the use of computer-aided design software
+                  to create digital representations of a system, allowing
+                  designers to visualize geometry, test fit, and evaluate
+                  design decisions before physical construction. It allows designers to
+                  make more accurate representations and modify them easily to improve design quality [4].
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                    align-items: start;
+                  "
+                >
+                  <div>
+                    <img
+                      src="bridge-cad-model-01.png"
+                      alt="CAD model showing segmented bridge geometry"
+                      style="
+                        width: min(100%, 980px);
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 6: CAD model showing segmented bridge geometry [10].</p>
+                  </div>
+                  <div>
+                    <img
+                      src="bridge-cad-model-02.png"
+                      alt="CAD model of the full bridge form"
+                      style="
+                        width: min(100%, 980px);
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 7: CAD model of the full bridge form [10].</p>
+                  </div>
+                </div>
+                <p>
+                  CAD modelling was used to develop and refine the geometry of
+                  the bridge before the actual construction. By creating a digital model,
+                  we were able to visualize the final cross-sectional design of the box-girder configuration, and ensure that all
+                  components were properly aligned and within the given
+                  dimensional constraints. This was crucial as it helped guide decisions related
+                  to proportions and material distribution, since we were limited on those, so we had to carefully consider the overall
+                  structural layout. Additionally, CAD allowed us to identify
+                  potential issues, such as misalignment or inefficient use of
+                  material, before building the physical model. This was a really important proccess, as 
+                  we only had one chance at building it, so it had to be perfect. However, while
+                  CAD modelling provided a clear and precise representation of
+                  the design, it did not account for real-world factors such
+                  as fabrication inaccuracies or small human errors, for instance in measuring or cutting. As a
+                  result, the physical bridge did not fully match the
+                  idealized model. This showed me that CAD is a powerful tool
+                  for visualizing and planning designs, but must be
+                  complemented with testing and practical considerations to
+                  ensure real-world performance.
+                </p>
+                <p>
+                  Fig. 6 demonstrates the CAD model that was used to visualize the splice region between 
+                  two sections of the bridge. By digitally representing how the components fit together, Fig. 7, 
+                  the model allowed us to clearly understand how the overlapping layers would interact 
+                  and how the load would be transferred across the joint. Through this representation, 
+                  we identified a critical issue in the design, a small portion of the outer
+                  layer did not fully wrap around the structure at the splice. 
+                  This gap highlighted a potential weakness in the connection, 
+                  as incomplete wrapping could reduce structural continuity and compromise the
+                  strength of the joint. This allowed us to take that into consideration and plan accordingly. This
+                  shows why making a CAD model is very useful and benefits the end results.
+                </p>
+              </div>
+
+              <div class="ctmf-rich">
+                <p class="panel__title">Converge</p>
+                <h3>Pairwise Comparison</h3>
+                <p>
+                  Pairwise comparison is a converging tool used to
+                  systematically evaluate design options by comparing them two
+                  at a time against defined criteria, allowing for a
+                  structured ranking and selection of the strongest concept. Compare each design in a row to a different design 
+                  in a column, and at the end the design with the most wins is the strongest design [5].
+                </p>
+                <img
+                  src="bridge-pairwise.png"
+                  alt="Pairwise comparison matrix used for bridge concept selection"
+                  style="
+                    width: min(100%, 980px);
+                    height: auto;
+                    border-radius: 20px;
+                    border: 1px solid rgba(64, 82, 68, 0.12);
+                    background: white;
+                  "
+                />
+                <p>
+                  Fig. 8: Pairwise Comparison Matrix to evaluate the best
+                  design [10].
+                </p>
+                <p>
+                  In this project, pairwise comparison was used to guide the
+                  selection of the final bridge design by evaluating multiple
+                  cross-sectional configurations, including the pi-beam,
+                  double I-beam, I-beam with wide flange, and iterative
+                  improvements of these concepts. Each design was compared
+                  directly against another based on criteria such as
+                  stiffness, resistance to buckling, material efficiency, and
+                  constructability. Through this process, we were able to
+                  identify which designs consistently outperformed others
+                  across key structural requirements.
+                </p>
+                <p>
+                  The pairwise comparison results are summarized in Fig. 8.
+                  The table shows the outcome of direct comparisons between
+                  each design, where each entry indicates the stronger option
+                  based on the selected criteria.The results demonstrate that open-section designs, while
+                  simpler and using less material, were more susceptible to
+                  buckling and provided lower overall stiffness. In contrast,
+                  the box-girder configuration consistently outperformed
+                  other designs across the majority of comparisons due to its
+                  ability to resist both bending and torsion more
+                  effectively. As a result, it emerged as the strongest
+                  overall design. This figure illustrates how pairwise
+                  comparison enabled a systematic and evidence-based
+                  narrowing of design options, ensuring that the final
+                  selection was based on consistent evaluation rather than
+                  subjective preference.
+                </p>
+                <p>
+                  This process demonstrated that pairwise comparison is an
+                  effective method for making informed design decisions under
+                  multiple competing criteria. It also highlighted that
+                  selecting a final concept is not about optimizing a single
+                  factor, but about identifying the design that provides the
+                  best overall balance of performance, efficiency, and
+                  reliability.
+                </p>
+              </div>
+
+              <div class="ctmf-rich">
+                <p class="panel__title">Converge</p>
+                <h3>Verification Methods and Planning</h3>
+                <p>
+                  Verification methods and planning involve defining how
+                  design requirements will be tested and validated, and
+                  proactively developing strategies to ensure that a design
+                  can be successfully constructed and perform as intended [6].
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 1rem;
+                    align-items: start;
+                  "
+                >
+                  <div>
+                    <img
+                      src="bridge-verification.png"
+                      alt="Bridge fabrication practice used for verification and planning"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 9: Practice matboard [10]</p>
+                  </div>
+                  <div>
+                    <img
+                      src="bridge-layout.jpg"
+                      alt="Practicing the layout on the practice matboard"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig 10: Practicing the layout on the practice matboard [10]</p>
+                  </div>
+                  <div>
+                    <img
+                      src="bridge-cutting-plan.jpg"
+                      alt="Planned cutting pattern to practice on the practice matboard"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>
+                      Fig. 11: Planned cutting pattern to practice on the
+                      practice matboard [10].
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  In this project, verification and planning were used to
+                  ensure that the bridge design was not only theoretically
+                  sound, but also feasible to construct with the given
+                  materials. Prior to building the final bridge, we practiced
+                  fabrication techniques on spare matboard, as seen in Fig. 9
+                  and Fig. 10, to evaluate how the material behaved during
+                  cutting, folding, and bonding.
+                </p>
+                <p>
+                  Through this process, we identified key improvements to our
+                  construction methods. For example, lightly scoring the fold
+                  line using the non-sharp side of an X-Acto knife allowed
+                  for cleaner and more controlled bends without cutting
+                  through the material, resulting in sharper corners and more
+                  accurate geometry. Additionally, scoring the surface before
+                  applying cement increased surface roughness, improving
+                  adhesive bonding and strengthening joints.
+                </p>
+                <p>
+                  These verification steps revealed that fabrication precision
+                  had a significant impact on structural performance. As a
+                  result, we refined our construction approach to improve
+                  consistency and reliability in the final build.
+                </p>
+                <p>
+                  Fig. 11 shows the planned cutting and folding pattern
+                  developed during preliminary practice on spare matboard. The
+                  layout outlines how the bridge components would be cut and
+                  folded from a single sheet to form the desired
+                  cross-sectional geometry. By mapping out fold lines, cut
+                  locations, and dimensions in advance, we were able to plan
+                  how to efficiently use the limited material while
+                  maintaining structural accuracy. This plan was created and
+                  tested prior to final construction as part of the
+                  verification process. Practicing this layout allowed us to
+                  evaluate how the matboard responded to cutting and folding,
+                  and to refine techniques such as scoring fold lines for
+                  improved precision. It also helped identify potential
+                  issues, such as misalignment or material waste, before
+                  working with the final sheet.
+                </p>
+                <p>
+                  This experience demonstrated that verification is not
+                  limited to final testing, but must be integrated early
+                  through planning and material experimentation. By validating
+                  construction methods in advance, we were able to reduce
+                  uncertainty and better align theoretical design decisions
+                  with real-world execution.
+                </p>
+              </div>
+            </div>
+
+            <ul class="tag-list" aria-label="Project 02 tags">
+              <li>Problem Framing</li>
+              <li>Stakeholders</li>
+              <li>Iteration</li>
+              <li>Testing</li>
+              <li>CTMFs</li>
+              <li>Reflection</li>
+            </ul>
+          </article>
+        </section>
+
+      </main>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-grid__title">Engineering Design Portfolio</p>
+            <p><a href="works-cited.pdf" target="_blank" rel="noopener noreferrer">Works Cited</a></p>
+          </div>
+          <div class="footer-grid__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Position</a>
+            <a href="projects.html">Projects</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

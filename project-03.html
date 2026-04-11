@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reusable project detail template for an engineering design portfolio."
+    />
+    <title>Accessible Filming | Engineering Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark brand-mark--link" href="index.html">
+          <span class="brand-mark__monogram" aria-hidden="true">ED</span>
+          <div>
+            <p class="brand-mark__label">Engineering Design</p>
+            <p class="brand-mark__subtle">Portfolio</p>
+          </div>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">Position</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-main">
+        <section class="page-hero page-hero--compact reveal">
+          <div class="page-hero__content">
+            <p class="eyebrow">Project 03</p>
+            <h1>Accessible Filming</h1>
+            <p class="lede">
+              This project focused on designing an accessible filming system
+              that enables a wheelchair user to independently control a camera.
+              The goal was to improve creative freedom and autonomy by
+              addressing limitations in traditional camera setups, which often
+              require fine motor control or external assistance. The design
+              aimed to enhance usability, adjustability and independence to
+              create a practical solution for real world filming scenarios.
+            </p>
+
+            <div class="panel panel--accent" style="margin-top: 1.5rem; max-width: 760px;">
+              <p class="panel__title">Quick Facts</p>
+              <ul class="detail-list">
+                <li><strong>Course:</strong> ESC102</li>
+                <li><strong>Focus:</strong> Accessibility, user-centered design creative freedom</li>
+                <li><strong>Final concept:</strong> Wheelchair-mounted camera system with a tactile input interface and adjustable camera arm for independent control</li>
+                <li><strong>Core issue:</strong> Limited accessibility of filming equipment for users with restricted mobility, reducing independence and creative expression</li>
+                <li><strong>Team:</strong> Monika Siim, Zoe Yu, Sterling Huang, Riana Khasanova</li>
+              </ul>
+            </div>
+            <div class="button-row">
+              <a class="button button--primary" href="projects.html">Back to Projects</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <details class="panel panel--feature" style="max-width: 1100px; margin-left: 0; margin-right: auto;">
+            <summary
+              style="
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 1.1rem;
+                list-style: none;
+                display: inline-block;
+                padding: 0.85rem 1.25rem;
+                border-radius: 999px;
+                border: 1px solid rgba(64, 82, 68, 0.2);
+                background: rgba(255,255,255,0.7);
+                margin-bottom: 1rem;
+              "
+            >
+              One-Pager
+            </summary>
+
+            <div style="margin-top: 1rem;">
+              <img
+                src="accessible-filming-one-pager.png"
+                alt="Accessible Filming one-pager"
+                style="
+                  width: min(88%, 960px);
+                  height: auto;
+                  display: block;
+                  margin: 0 auto;
+                  border-radius: 24px;
+                  border: 1px solid rgba(64, 82, 68, 0.12);
+                "
+              />
+            </div>
+          </details>
+        </section>
+
+        <section class="section section--tight reveal">
+          <div class="project-grid project-grid--two">
+            <article class="panel">
+              <p class="panel__title">Opportunity</p>
+              <h2>Problem and Stakeholders</h2>
+              <p>
+                This project focused on designing an accessible filming system to enable a Pegasus Toronto participant, Jonathan, to independently record video. Due to limited arm strength and difficulty interacting with small camera controls, Jonathan required assistance to operate a GoPro, limiting his independence and creative expression.
+The stakeholders included Jonathan (primary user), Pegasus instructors, and support staff. Jonathan prioritized independence, ease of use, and the ability to film at eye level, while instructors emphasized safety, reliability, and ease of setup. The challenge was to design a system that balances accessibility, usability, and filming performance within a real-world community context.
+
+              </p>
+              <h2 style="margin-top: 2.2rem;">Objectives</h2>
+              <ul class="detail-list detail-list--spacious">
+                <li>Support one-handed operation of the input system</li>
+                <li>Use button sizes and spacing that enable easy interaction: 20-30 mm buttons with at least 25 mm spacing</li>
+                <li>Provide distinct tactile and visual cues through shape, contrast, and feedback</li>
+                <li>Enable at least one degree of freedom for camera positioning</li>
+                <li>Provide live camera feed for real-time framing</li>
+                <li>Minimize the user force required during operation</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <p class="panel__title">Design Process</p>
+              <h2>How the concept was developed</h2>
+              <p>
+                When initially approaching the design problem, we explored a range of possible solutions with the goal of enabling independent filming while maintaining stability and ease of use. Early concepts included different mounting systems and control interfaces, but these approaches were quickly identified as either too complex, difficult to operate, or not well-suited to Jonathan’s physical constraints. This highlighted the need to prioritize accessibility, simplicity, and reliability in the design.
+
+              </p>
+              <p>
+                During the concept development phase, we analyzed different system configurations and evaluated their ability to balance usability and functionality. Through comparison and testing, we recognized that combining all functions into a single system created usability challenges. This led to a key design decision to separate the system into two subsystems: an input controller and an output camera system, allowing each to be optimized independently.
+
+              </p>
+              <p>
+                As the design progressed, further refinements were made to address usability limitations. The input interface was redesigned to include larger, well-spaced, and high-contrast buttons to improve accessibility, while auditory feedback was introduced to support interaction. On the output side, the camera mounting system was adjusted to improve stability and allow for eye-level filming without requiring the user to hold the device. In addition to that a Raspberry Pi camera was chosen instead of the previously selected GoPro. These decisions were guided by trade-offs between usability, control, stability, and ease of setup. But most importantly, we wanted to provide Jonathan with artistic freedom and allow him to be able to control the camera settings. 
+
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight reveal">
+          <div class="project-grid project-grid--two">
+            <article class="panel">
+              <p class="panel__title">Final Design</p>
+              <h2>Recommended concept</h2>
+              <p>
+                The final design is an accessible filming system consisting of an input control board
+                and an output camera system mounted on a robotic arm. The input interface uses large, well-spaced, high-contrast buttons with auditory feedback to improve usability for users with visual and motor limitations.
+The system is connected to a Raspberry Pi, which translates user inputs into camera actions, enabling independent control of filming functions. The camera is mounted in a stable, adjustable configuration that allows for eye-level recording without requiring the user to hold the device.
+The recording then gets translated to Jonathan's iPad screen mounted on a table on his wheelchair. This design was selected because it best balances usability, independence, stability, and performance, directly addressing the key needs identified in the project.
+              </p>
+            </article>
+
+            <article class="panel">
+              <p class="panel__title">Results</p>
+              <h2>Evidence from testing</h2>
+              <ul class="detail-list">
+                <li>System consistently achieved 3 degrees of freedom (pan, tilt, vertical) across all trials</li>
+                <li>Input system passed the button recognition test, confirming accurate and reliable user interaction</li>
+                <li>Results demonstrate that both input and output systems met key functional requirements, supporting independent and effective use</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight reveal">
+          <div class="project-grid project-grid--two">
+            <article class="panel">
+              <p class="panel__title">Reflection</p>
+              <h2>What I learned</h2>
+              <p>
+                This project reinforced that effective engineering design must
+                be grounded in a deep understanding of the user and stakeholders, not just
+                technical performance. While initial ideas focused on
+                mechanical functionality, research into Jonathan's motor and
+                visual limitations and primary research revealed that usability, accessibility, and enabling
+                creative independence were equally critical to success.
+              </p>
+              <p>
+                Prototyping and testing showed that small design
+                decisions such as button size, spacing, and feedback had a
+                significant impact on usability. Designs that appeared
+                functional in theory often introduced challenges such as
+                increased cognitive load or difficulty in non-visual
+                interaction. This highlighted that accessibility is not a
+                single feature, but an integrated system with all of its parts requiring careful considerations.
+              </p>
+              <p>
+                Additionally, the project emphasized the
+                importance of testing, especially during the initial prototyping stages. By
+                evaluating both input and output systems through structured
+                tests, we were able to validate assumptions and refine the
+                design based on real performance rather than intention or assumptions. This
+                further reinforced my understanding that engineering design requires
+                continuous iteration, where insights from testing directly
+                shape and improve the final solution.
+              </p>
+            </article>
+
+            <article class="panel">
+              <p class="panel__title">Connection to my position</p>
+              <h2>How this reflects my design approach</h2>
+              <p>
+                This project reflects my understanding of engineering design as
+                a user-centered and iterative process that evolves through both
+                analysis and real-world testing. It reinforced that strong
+                design decisions are not made solely through technical
+                reasoning, but through aligning solutions with the needs,
+                abilities, and experiences of stakeholders.
+              </p>
+              <p>
+                The shift from exploring multiple control mechanisms to
+                selecting a tactile, button-based system demonstrates how
+                revisiting assumptions and prioritizing usability can lead to
+                more effective solutions. This aligns with my view that
+                engineering design requires adaptability and a willingness to
+                refine ideas as new insights emerge.
+              </p>
+              <p>
+                Furthermore, this project strengthened my perspective that
+                engineering design is inherently nonlinear. Despite careful
+                planning, challenges related to accessibility, usability, and
+                system integration required continuous adjustment and
+                reevaluation. This experience reinforced my belief that
+                effective design involves balancing technical performance with
+                human factors, and responding thoughtfully to uncertainty
+                throughout the process.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <article class="panel">
+            <p class="panel__title">CTMFs Used</p>
+            <h2>Key concepts, tools, models, and frameworks</h2>
+
+            <div class="ctmf-stack ctmf-stack--inside">
+              <div class="ctmf-rich">
+                <p class="panel__title">Diverge</p>
+                <h3>Functional Decomposition</h3>
+                <p>
+                  Functional decomposition is a diverging tool used to break
+                  down a complex system into smaller functional components,
+                  allowing designers to explore and develop solutions for each
+                  part independently. Functional decomposition can be used to explore solutions to a given problem without
+                  overly constraining the choices for implementing those solutions [7].
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 1rem;
+                    align-items: start;
+                  "
+                >
+                  <div>
+                    <img
+                      src="accessible-filming-output-designs.png"
+                      alt="Output system concept options for Accessible Filming"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 12: Output system design concepts explored during functional decomposition.</p>
+                  </div>
+                  <div>
+                    <img
+                      src="accessible-filming-input-designs.png"
+                      alt="Input system concept options for Accessible Filming"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 13: Input system design concepts explored during functional decomposition.</p>
+                  </div>
+                </div>
+                <p>
+                  In this project, functional decomposition was used to better
+                  understand and structure the accessible filming system by
+                  separating it into key functional components, as seen in Fig. 12 and Fig. 13. The system was
+                  divided into an input subsystem, Fig 13, and an output
+                  camera-control subsystem, Fig. 12. The input subsystem focused on
+                  enabling accessible interaction with the system, tailored to Jonathan’s motor and
+                  visual limitations. In fig. 13, we explored different input methods, such as button-based interfaces, touchscreens, and alternative input devices, to find the most accessible and user-friendly solution for Jonathan.The input system designs were chosen with thoughts that Jonathan
+                  would be interacting with them really closely. The output
+                  subsystem focused on camera positioning and enabling
+                  controlled movement and eye-level filming. It focused on
+                  filming features that we want to have and the artistic side. In fig. 12, it can be seen
+                  that we explored different camera mounting and movement mechanisms, that would allow for different degrees of freedom and stability.
+                </p>
+                <p>
+                  This decomposition allowed us to explore multiple design
+                  approaches for each function independently, rather than
+                  attempting to solve the problem as a single, complex system.
+                  It helped us diverge to 3 main concepts for input
+                  systems and 3 main concepts for output systems and later
+                  through converging, it was helpful to have both input and output systems, as we selected the best concept form each
+                  section, integrating them into a final concept
+                  together.
+                </p>
+                <p>
+                  This process demonstrated that functional decomposition is
+                  effective for managing complexity and generating targeted
+                  solutions, particularly in user-centered design problems
+                  where different system components must address distinct
+                  constraints. As it was important to ensure that the input
+                  system was accessible to Jonathan and the output system gave
+                  the most artistic freedom. It also reinforced the
+                  importance of designing subsystems that can work together
+                  cohesively while still being optimized individually.
+                </p>
+              </div>
+
+              <div class="ctmf-rich">
+                <p class="panel__title">Frame</p>
+                <h3>Stakeholder Analysis</h3>
+                <p>
+                  Stakeholder analysis is a framing tool used to identify key
+                  users and understand their needs, constraints, and values in
+                  order to guide design decisions. It is the foundation of an entire project.
+                  The process provides not only the quantitative information but the broad overview of the project as well [8].
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                    align-items: start;
+                  "
+                >
+                  <div>
+                    <img
+                      src="accessible-stakeholder-01.png"
+                      alt="Research notes on Jonathan's specific physical limitations"
+                      style="
+                        width: min(100%, 980px);
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 14: Notes from the community describing Jonathan's specific physical limitations [11].</p>
+                  </div>
+                  <div>
+                    <img
+                      src="accessible-stakeholder-02.png"
+                      alt="Research notes on Jonathan's vision-related limitations"
+                      style="
+                        width: min(100%, 980px);
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 15: Notes from the community describing Jonathan's vision-related limitations [11]</p>
+                  </div>
+                  <div>
+                    <img
+                      src="accessible-stakeholder-03.png"
+                      alt="Interview response about Jonathan's preferred control type"
+                      style="
+                        width: min(100%, 980px);
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 16: Community response, to a question asked, indicating Jonathan's preference for button-like controls [11]</p>
+                  </div>
+                </div>
+                <p>
+                  In this project, stakeholder analysis was essential in
+                  defining the problem, with Jonathan identified as the
+                  primary stakeholder. To fully understand his needs, we
+                  conducted research on his physical abilities and interaction
+                  limitations, including observations of hand positioning,
+                  grip control, and fine motor precision, as shown in Fig. 14. Using information provided
+                  by the community, shown in Fig. 15 and Fig. 16, we were able to identify specific constraints such as limited dexterity and vision-related challenges. We also gathered insights into his preferences, such as a preference for button-like controls, as indicated in Fig. 17.
+                  This allowed us to have a strong base of where to start our secondary research and concept development.
+                  It also helped us move beyond assumptions and develop a more
+                  accurate understanding of how Jonathan would interact with
+                  the system.
+                  These insights directly informed
+                  our design requirements, including enabling one-handed
+                  operation, increasing button size, and simplifying the
+                  interface to reduce cognitive and physical load.
+                </p>
+                <p>
+                  Additional stakeholders included counsellors and the Pegasus
+                  organization, who emphasized safety, reliability, and ease
+                  of setup. Before designing a solution, it was important to consider secondary stakeholders,
+                  in this project they will be the ones setting up the filming system.
+                  Balancing these needs required designing a system
+                  that was both accessible for Jonathan and practical for
+                  others involved in setup and supervision.
+                </p>
+                <p>
+                  This process demonstrated that effective engineering design
+                  begins with a deep understanding of stakeholders, and that
+                  grounding decisions in real user evidence leads to more
+                  meaningful and functional solutions. It showed that the interaction with the stakeholders removes bias that 
+                  the group could have had and allows for a more accurate understanding of the problem and the needs, which is essential for designing an effective solution. 
+                  Most importantly, stakeholder analysis here reinforced the importance of considering all stakeholders, including secondary ones, to ensure that the design is not only user-centered but also practical and feasible in its intended context.
+                </p>
+              </div>
+
+              <div class="ctmf-rich">
+                <p class="panel__title">Converge</p>
+                <h3>Pugh Chart</h3>
+                <p>
+                  A Pugh chart is a converging tool used to evaluate design
+                  concepts against a set of defined criteria by comparing them
+                  relative to a baseline using qualitative ratings such as
+                  "Better," "Same," or "Worse." This allows for systematic
+                  and structured decision-making across multiple competing
+                  factors.
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 1rem;
+                    align-items: start;
+                  "
+                >
+                  <div>
+                    <img
+                      src="accessible-pugh-01.png"
+                      alt="Pugh chart using RecordBoard as the baseline"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 17: Pugh chart with RecordBoard as the baseline for comparison</p>
+                  </div>
+                  <div>
+                    <img
+                      src="accessible-pugh-02.png"
+                      alt="Pugh chart using Cinestick as the baseline"
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 18: Pugh chart with Cinestick as the baseline for comparison</p>
+                  </div>
+                </div>
+                <p>
+                  In this project, a Pugh chart was used to evaluate three
+                  input system concepts against key accessibility and
+                  usability criteria derived from stakeholder research,
+                  including tactile identification, error reduction,
+                  cognitive load, and ease of use without vision. Each
+                  concept was compared relative to a baseline using
+                  qualitative ratings, and to reduce bias, multiple baselines
+                  were considered throughout the analysis.
+                </p>
+                <p>
+                  From analysing the Pugh Charts, Fig. 16 and Fig. 17, the comparison revealed that while the Cinestick performed
+                  well in precision and continuous control, the custom control
+                  board (RecordBoard) achieved the most balanced performance
+                  across all criteria. It provided strong tactile
+                  identification through large, distinguishable buttons,
+                  reduced accidental inputs due to increased spacing, and
+                  minimized cognitive load by offering simple, discrete
+                  interactions. Additionally, it aligned closely with
+                  stakeholder preferences for mechanical buttons and
+                  supported reliable use without visual dependence.
+                </p>
+                <p>
+                  Based on this evaluation, the custom control board was
+                  selected as the optimal solution due to its consistency
+                  across criteria and strong alignment with accessibility
+                  requirements. This process showed that effective
+                  design selection involves balancing multiple user-centered
+                  factors rather than optimizing a single performance metric. It also removed any bias the team could have had towards choosing a certain more favored design. 
+                  It ensured that eveyrthing was backed up by evudencde andx jsutifikcation rather than personal preference.
+                </p>
+              </div>
+            </div>
+
+            <ul class="tag-list" aria-label="Project 03 tags">
+              <li>Problem Framing</li>
+              <li>Stakeholders</li>
+              <li>Iteration</li>
+              <li>Testing</li>
+              <li>CTMFs</li>
+              <li>Reflection</li>
+            </ul>
+          </article>
+        </section>
+
+      </main>
+
+      <footer class="site-footer site-footer--page">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-grid__title">Engineering Design Portfolio</p>
+            <p><a href="works-cited.pdf" target="_blank" rel="noopener noreferrer">Works Cited</a></p>
+          </div>
+          <div class="footer-grid__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Position</a>
+            <a href="projects.html">Projects</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

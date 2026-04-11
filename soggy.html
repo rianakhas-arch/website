@@ -43,8 +43,7 @@
         <nav id="site-nav" class="site-nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="about.html">Position</a>
-          <a href="projects.html" class="is-active">Projects</a>
-          <a href="design-portfolio.html">CTMFs</a>
+          <a href="projects.html" aria-current="page">Projects</a>
         </nav>
       </header>
 
@@ -60,19 +59,18 @@
               ultimately recommending a pull-out layered container system.
             </p>
 
+            <div class="panel panel--accent" style="margin-top: 1.5rem; max-width: 500px;">
+              <p class="panel__title">Quick Facts</p>
+              <ul class="detail-list">
+                <li><strong>Course:</strong> ESC101</li>
+                <li><strong>Focus:</strong> Food freshness and convenience</li>
+                <li><strong>Final concept:</strong> Pull-out layered container</li>
+                <li><strong>Core issue:</strong> Moisture transfer into bread</li>
+                <li><strong>Team:</strong> Ana Victoria Diaz, Ishita Jain, Radhika Patel, Riana Khasanova</li>
+              </ul>
+            </div>
             <div class="button-row">
-              <div class="panel panel--accent" style="margin-top: 1.5rem; max-width: 500px;">
-  <p class="panel__title">Quick Facts</p>
-  <ul class="detail-list">
-    <li><strong>Course:</strong> ESC101</li>
-    <li><strong>Focus:</strong> Food freshness and convenience</li>
-    <li><strong>Final concept:</strong> Pull-out layered container</li>
-    <li><strong>Core issue:</strong> Moisture transfer into bread</li>
-
-  </ul>
-</div>
               <a class="button button--primary" href="projects.html">Back to Projects</a>
-              <a class="button button--secondary" href="design-portfolio.html">Go to CTMFs</a>
             </div>
           </div>
         </section>
@@ -98,48 +96,108 @@
 
     <div style="margin-top: 1rem;">
       <img
-        src="1.png"
+        src="soggy-one-pager.png"
         alt="Soggy Sandwich One Pager"
-        style="width: 100%; height: auto; display: block; border-radius: 24px;"
+        style="width: min(88%, 960px); height: auto; display: block; margin: 0 auto; border-radius: 24px;"
       />
     </div>
   </details>
 </section>
 
         <section class="section section--tight reveal">
-          <div class="project-grid">
+          <div class="project-grid project-grid--two">
             <article class="panel">
               <p class="panel__title">Opportunity</p>
               <h2>Problem and Stakeholders</h2>
               <p>
-                As commuter students who regularly pack lunches in advance, we identified a common issue: sandwiches often become soggy by the time they are consumed. Over several hours, moisture from ingredients such as vegetables or condiments migrates into the bread, degrading texture and overall eating quality. This problem reduces user satisfaction despite otherwise convenient meal preparation. As a result, we identified an opportunity to design a solution that minimizes moisture transfer and preserves sandwich quality until consumption.
+                This project focused on addressing the issue of sandwiches
+                becoming soggy during storage due to moisture transfer from
+                ingredients into the bread. Over time, this moisture migration
+                degrades texture and reduces overall eating quality, lowering
+                user satisfaction despite the convenience of preparing meals in
+                advance. The primary stakeholders include commuter students and
+                individuals who pack lunches ahead of time, who require a
+                solution that maintains freshness while remaining portable and
+                easy to use. This problem is significant within this context
+                because it highlights the challenge of preserving food quality
+                over time, requiring a balance between effectiveness,
+                usability, and practicality.
               </p>
+              <h2 style="margin-top: 2.2rem;">Objectives</h2>
+              <ul class="detail-list detail-list--spacious">
+                <li>Limit sogginess: bread mass increase &le; ~17% after 8 hours</li>
+                <li>Control moisture environment: maintain ~70% relative humidity</li>
+                <li>Ensure food safety: no harmful contamination; BPA below safe limits</li>
+                <li>Maintain portability: &le; 0.4 kg and fits within ~30 x 14 x 5 cm</li>
+                <li>Support usability: assembly time &le; 90 seconds</li>
+                <li>Ensure consistency: variation in sogginess &le; ~4% between sandwiches</li>
+              </ul>
             </article>
 
             <article class="panel">
               <p class="panel__title">Design Process</p>
               <h2>How the concept was developed</h2>
               <p>
-                We explored five concepts, including Pull-Out Layers, Skewer,
-                Salty Sponges, Fan, and Parchment Paper separation. Each concept
-                was evaluated using methods such as assembly time, moisture
-                absorption, and spillage testing, then compared through tools
-                like pairwise comparison and Pugh charts.
+                When initially framing the opportunity, we aimed to design a
+                solution applicable to any type of sandwich. However, we
+                quickly recognized that this framing was too broad and limited
+                our ability to develop a focused and testable solution. As a
+                result, we refined the problem to a specific sandwich
+                configuration containing lettuce, tomatoes, and cheese, where
+                moisture transfer is most prominent.
+              </p>
+              <p>
+                During the idea
+                exploration phase, we applied multiple ideation techniques,
+                including biomimicry, brainwriting, and SCAMPER, to generate a
+                diverse set of concepts. We also analyzed existing reference
+                designs to identify gaps and opportunities for improvement,
+                ensuring our concepts addressed limitations not currently
+                solved in existing products.
+              </p>
+              <p>
+                Following an initial presentation,
+                feedback indicated that our scope remained too broad. In
+                response, we further reframed the problem by excluding sauces,
+                allowing us to focus more precisely on structural separation of
+                ingredients as the primary mechanism for reducing moisture
+                transfer.
+              </p>
+              <p>
+                To converge on a final concept, we used structured
+                decision-making tools, including a Pugh chart, morphological
+                chart, and pairwise comparison. These tools enabled us to
+                evaluate concepts against criteria such as effectiveness,
+                usability, and feasibility, leading to a justified and
+                evidence-based selection of our final design.
+              </p>
+              <p>
+                Finally, we moved
+                into testing. We evaluated the design by assembling sandwiches
+                and observing moisture absorption over time, comparing its
+                performance to a control sandwich stored in a standard
+                container. This allowed us to assess how effectively the design
+                reduced moisture transfer under realistic conditions.
               </p>
             </article>
           </div>
         </section>
 
         <section class="section section--tight reveal">
-          <div class="project-grid">
+          <div class="project-grid project-grid--two">
             <article class="panel">
               <p class="panel__title">Final Design</p>
               <h2>Recommended concept</h2>
               <p>
-                The final concept was a pull-out layered container that keeps
-                wet ingredients separated from the bread until consumption. This
-                approach directly targeted the main source of sogginess while
-                remaining practical and reasonably easy to use.
+                The final design is a layered, pull-out container that
+                physically separates sandwich ingredients until consumption. It
+                works by isolating wet ingredients, such as tomatoes, from the
+                bread using compartmentalized layers, preventing direct contact
+                during storage. This separation minimizes moisture eviddence,
+                transfer and preserves the texture of the bread over time. The
+                design remains simple to assemble and practical for everyday
+                use, making it suitable for students who prepare meals in
+                advance.
               </p>
             </article>
 
@@ -147,26 +205,36 @@
               <p class="panel__title">Results</p>
               <h2>Evidence from testing</h2>
               <ul class="detail-list">
-                <li>Assembly time was about 53 seconds.</li>
-                <li>Bread compression remained low compared with alternatives.</li>
-                <li>The concept performed best overall in final selection.</li>
+                <li>Reduced moisture absorption compared to a control sandwich stored in a standard container</li>
+                <li>Bread maintained structural integrity over several hours of storage</li>
+                <li>Assembly time of approximately 53 seconds</li>
+                <li>Final design demonstrated improved usability compared to earlier prototypes</li>
               </ul>
             </article>
           </div>
         </section>
 
         <section class="section section--tight reveal">
-          <div class="project-grid">
+          <div class="project-grid project-grid--two">
             <article class="panel">
               <p class="panel__title">Reflection</p>
               <h2>What I learned</h2>
               <p>
-                This project showed me that strong design decisions come from
-                balancing user needs with technical evaluation. Several concepts
-                worked in one area, but the final recommendation had to combine
-                effectiveness, convenience, and practicality. It was an early
-                example of how structured testing can support better design
-                reasoning.
+                This project showed me that iteration is not simply repeating
+                ideas, but actively learning through failure and constraint. In
+                early stages, we framed the problem too broadly and therefore
+                kept running into difficulties when trying to brainstorm
+                possible ideas, as there were too many constraints due to the
+                broad scope. We reframed our scope by narrowing it down to a
+                toast with lettuce, tomato, and cheese sandwich. Moreover, we
+                also reframed after prototyping and testing, as testing showed
+                that physically separating components was more reliable than
+                trying to control moisture indirectly. This reinforced the
+                importance of always being open to reframing and highlighted the
+                value of building early and using testing to challenge
+                assumptions, rather than relying on initial reasoning alone.
+                This also required balancing trade-offs between effectiveness,
+                usability, and simplicity when refining the final design.
               </p>
             </article>
 
@@ -174,11 +242,16 @@
               <p class="panel__title">Connection to my position</p>
               <h2>How this reflects my design approach</h2>
               <p>
-                This project reflects my tendency to approach design through
-                evidence-based comparison and user-focused problem framing. Even
-                in an early design project, I was already drawn to solutions
-                that were not only functional, but also realistic for everyday
-                use.
+                This project reflects my evolving understanding of engineering
+                design as a nonlinear and adaptive process. Rather than
+                following a fixed sequence, our design direction changed as new
+                information emerged through testing. This required making
+                decisions under uncertainty and revisiting earlier assumptions,
+                particularly when shifting from material-based moisture control
+                to physical separation. It reinforced my position that
+                effective design depends on adaptability, iterative testing, and
+                the ability to refine both the problem and solution as
+                constraints and insights evolve.
               </p>
             </article>
           </div>
@@ -189,43 +262,197 @@
             <p class="panel__title">CTMFs Used</p>
             <h2>Key concepts, tools, models, and frameworks</h2>
 
-            <div class="project-grid">
-              <div>
-                <h3>Stakeholder Analysis</h3>
+            <div class="ctmf-stack ctmf-stack--inside">
+              <div class="ctmf-rich">
+                <p class="panel__title">Frame</p>
+                <h3>Reframing</h3>
                 <p>
-                  Helped define the needs of students and other users preparing
-                  sandwiches ahead of time, especially around convenience,
-                  freshness, and portability.
+                  Reframing is the process of redefining or narrowing a problem
+                  to better reflect its core issue, often based on new
+                  insights, constraints, or feedback. Reframing allows constraints and criteria
+                  to be better defined and can lead to more focused and effective design solutions [1]. 
+                </p>
+                <img
+                  src="soggy-reframing.png"
+                  alt="Framing and design goals reference for the Soggy Sandwiches project"
+                  style="
+                    width: min(100%, 980px);
+                    height: auto;
+                    border-radius: 20px;
+                    border: 1px solid rgba(64, 82, 68, 0.12);
+                    background: white;
+                  "
+                />
+                <p>
+                  Fig. 1: An extract from the final report showing the change
+                  of the scope and reframing [9].
+                </p>
+                <p>
+                  Reframing was a key part of our design process, as our
+                  understanding of the problem evolved over time. Initially,
+                  the problem was framed broadly as improving the overall
+                  sandwich experience, which led to a wide range of unfocused
+                  concepts. Through feedback and iteration, particularly
+                  during the Alpha presentation, we refined the problem to
+                  focus specifically on moisture transfer in a
+                  toast-lettuce-tomato-cheese sandwich with no condiments.
+                  This shift allowed us to isolate the primary cause of
+                  sogginess and made our testing more controlled and
+                  meaningful. As a result, we moved away from general
+                  approaches, such as using absorbent materials, and instead
+                  focused on physically separating ingredients, which proved to
+                  be more effective. This experience showed me that reframing
+                  is not a one-time step, but an ongoing process that can
+                  significantly change both the direction of design decisions
+                  and how solutions are evaluated.
+                </p>
+                <p>
+                The extract from the original Design Report, Fig. 1, demonstrates how
+                  the group reframed the design opportunity by identifying
+                  moisture absorption from environmental humidity as the
+                  primary cause of sogginess, rather than attributing it
+                  solely to sandwich ingredients. This shift in framing
+                  allowed for a more focused and relevant design approach.
+                  Additionally, the image shows how the group defined a
+                  standardized model sandwich, consisting of specific
+                  ingredients and structure, rather than leaving the system
+                  open to interpretation. This ensured consistency in testing
+                  and evaluation, enabling more reliable comparisons across
+                  design iterations.
                 </p>
               </div>
 
-              <div>
-                <h3>Prototyping and Testing</h3>
+              <div class="ctmf-rich">
+                <p class="panel__title">Diverge</p>
+                <h3>Brainwriting</h3>
                 <p>
-                  Multiple concepts were evaluated through moisture, assembly
-                  time, and spillage testing, allowing design decisions to be
-                  grounded in evidence rather than preference alone.
+                  Brainwriting is a structured ideation method where
+                  individuals independently generate ideas through symbols and drawings for five minutes. Once 
+                  the time ends, each participant passes their sheet to the next person, and the process
+                  repeats. This approach allows for the development of ideas in isolation before sharing them,
+                  reducing bias and encouraging a wider range of concepts [2].
+                </p>
+                <img
+                  src="soggy-brainwriting.jpg"
+                  alt="Brainwriting sheet from the Soggy Sandwiches project"
+                  style="
+                    width: min(100%, 980px);
+                    height: auto;
+                    border-radius: 20px;
+                    border: 1px solid rgba(64, 82, 68, 0.12);
+                    background: white;
+                  "
+                />
+                <p>
+                  Fig 2: initial stages of diverging through using
+                  brainwriting 6-3-5 technique [9].
+                </p>
+                <p>
+                  Brainwriting was used as a diverging tool to generate a wide
+                  range of design concepts without the influence of group
+                  discussion. Each team member independently wrote down ideas
+                  for preventing sandwich sogginess, which were then shared
+                  and built upon by others. This process allowed us to explore
+                  multiple approaches, including ingredient separation,
+                  absorbent materials, and structural redesign of the
+                  container. Compared to verbal brainstorming, brainwriting
+                  helped reduce bias and ensured that all ideas were
+                  considered equally, leading to a more diverse set of initial
+                  concepts. Several key ideas, particularly those involving
+                  layered separation, emerged from this process and later
+                  informed our final design direction. This experience showed
+                  me that effective divergence requires structured methods that
+                  encourage participation and reduce the influence or bias of
+                  dominant voices.
+                </p>
+                <p>
+                  Fig. 2 illustrates the early stages of the group’s diverging phase, where ideas are generated freely. As shown, the process appears messy and unstructured, reflecting the goal of brainstorming without constraints or premature evaluation. This stage prioritizes exploring a wide range of possibilities rather than refining solutions. The figure highlights that engineering design is not always linear or orderly, instead, it often begins with a chaotic exploration of ideas before converging toward a final solution.
                 </p>
               </div>
 
-              <div>
-                <h3>Pugh Chart Evaluation</h3>
+              <div class="ctmf-rich">
+                <p class="panel__title">Represent</p>
+                <h3>Iterative Prototyping</h3>
                 <p>
-                  Structured comparison helped the team converge on a final
-                  concept by balancing functionality with usability and other
-                  design criteria.
+                  Iterative prototyping is the process of creating and
+                  refining physical or functional models to test ideas,
+                  allowing designers to evaluate performance. By testing prototypes
+                  early on in the development process, they can identify and improve
+                  designs through repeated cycles [3].
                 </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    gap: 1rem;
+                    align-items: start;
+                  "
+                >
+                  <div>
+                    <img
+                      src="soggy-prototype-01.png"
+                      alt='Physical prototype of the "Pull-Out" container'
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 3: Physical prototype of the "Pull-Out container" [9].</p>
+                  </div>
+                  <div>
+                    <img
+                      src="soggy-prototype-02.png"
+                      alt='Physical prototype of the "Skewer" container'
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 4: A physical prototype of the "Skewer" container [9].</p>
+                  </div>
+                  <div>
+                    <img
+                      src="soggy-prototype-03.png"
+                      alt='Drawing prototype of the "Salty Sponges" container'
+                      style="
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        border: 1px solid rgba(64, 82, 68, 0.12);
+                        background: white;
+                      "
+                    />
+                    <p>Fig. 5: A drawing prototype of the "Salty Sponges" container [9].</p>
+                  </div>
+                </div>
+                <p>
+                  Iterative prototyping was used to represent and evaluate different approaches to reducing sandwich sogginess
+                   through physical experimentation. We developed multiple prototypes to test both absorption-based and 
+                   separation-based mechanisms. Testing revealed practical challenges, including inconsistent performance 
+                   and usability issues that were not apparent during initial planning. Based on these results, we refined our 
+                   approach toward layered separation, which provided more reliable control of moisture transfer. This process 
+                   demonstrated that prototyping is essential for translating abstract ideas into tangible systems and uncovering 
+                   real-world limitations, reinforcing that effective design depends on continuous testing and refinement rather than 
+                   relying solely on initial assumptions.
+                </p>
+                <p>
+                  In Fig. 3, is a picture of the Pull-Out container prototype. This prototype uses sliding plastic separators inserted through side slots to physically separate sandwich layers. Each ingredient is isolated to prevent direct contact, reducing moisture transfer between components. This prototype represents an early attempt to address sogginess through structural separation rather than absorption. By building and testing a physical model, we were able to visualize how layer spacing affects moisture transfer and usability. It helped us evaluate practicality, revealing challenges such as complexity in assembly and user interaction. This prototype was valuable in demonstrating that physical separation is a viable direction, but required simplification.
+                </p>
+                <p>
+                  Fig. 4 is a prototype of a skewer container. This design uses a skewer inserted through the container to hold sandwich components apart. A protective casing encloses the filling to prevent moisture from reaching the bread. The sandwich is assembled only at the time of consumption by removing the casing and sliding components together. This prototype represents a more mechanical approach to separation, exploring how controlled assembly could eliminate sogginess entirely. Through prototyping, we tested how effectively this system maintained separation and how intuitive it was for users. While it reduced moisture transfer, testing revealed usability challenges and added complexity. This helped us understand the trade-off between performance and user experience, guiding us toward simpler solutions.
+                 </p>
+                <p>
+                  In Fig. 5, the prototype places the sandwich inside a sealed container with salt-saturated sponges positioned along the sides. The goal is to reduce moisture through absorption, as salt attracts water particles and helps. This prototype represents a material-based approach to solving sogginess. By physically building and testing this concept, we were able to observe how moisture behaves in a closed system and evaluate the effectiveness of indirect moisture control. The results showed limited impact compared to separation-based methods, helping us rule out absorption as the primary strategy. This prototype was important in refining our understanding of the problem and narrowing our design direction.
+                </p>
+           
               </div>
             </div>
-
-            <ul class="tag-list" aria-label="Soggy Sandwiches tags">
-              <li>Problem Framing</li>
-              <li>Stakeholders</li>
-              <li>Prototyping</li>
-              <li>Testing</li>
-              <li>Pugh Chart</li>
-              <li>Reflection</li>
-            </ul>
           </article>
         </section>
       </main>
@@ -234,17 +461,13 @@
         <div class="footer-grid">
           <div>
             <p class="footer-grid__title">Engineering Design Portfolio</p>
-            <p class="footer-grid__note">
-              This project page expands on the summary card with process,
-              evidence, reflection, and CTMF connections.
-            </p>
+            <p><a href="works-cited.pdf" target="_blank" rel="noopener noreferrer">Works Cited</a></p>
           </div>
 
           <div class="footer-grid__links">
             <a href="index.html">Home</a>
             <a href="about.html">Position</a>
             <a href="projects.html">Projects</a>
-            <a href="design-portfolio.html">CTMFs</a>
           </div>
         </div>
       </footer>

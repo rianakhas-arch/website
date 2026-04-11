@@ -4,7 +4,7 @@ const navLinks = [...document.querySelectorAll(".site-nav a")];
 const revealItems = [...document.querySelectorAll(".reveal")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const currentPath = window.location.pathname.split("/").pop() || "index.html";
-const normalizedPath = currentPath === "index.html" ? "projects.html" : currentPath;
+const normalizedPath = currentPath;
 
 if (navToggle && siteHeader) {
   navToggle.addEventListener("click", () => {
@@ -33,8 +33,7 @@ if (navToggle && siteHeader) {
 if (navLinks.length > 0) {
   navLinks.forEach((link) => {
     const href = link.getAttribute("href");
-    const isDeclaredCurrent = link.getAttribute("aria-current") === "page";
-    const isActive = isDeclaredCurrent || href === normalizedPath;
+    const isActive = href === normalizedPath;
     link.classList.toggle("is-active", isActive);
 
     if (isActive) {
