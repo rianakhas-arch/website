@@ -778,6 +778,13 @@ code {
   margin: 0;
 }
 
+.two-up {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
 .cta-banner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -965,6 +972,28 @@ code {
     grid-template-columns: 1fr;
   }
 
+  /* Ensure CTMF stacks and any nested two-column image grids collapse
+     to a single column at narrower widths so images and text remain
+     visible when the browser is resized (for example to half-screen). */
+  .ctmf-stack,
+  .ctmf-stack .ctmf-rich {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Override any inline two-column grids used inside CTMF blocks so
+     they don't create overflow or hide content on medium-width viewports. */
+  .ctmf-rich > div {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .ctmf-rich img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
   .hero {
     min-height: auto;
     padding-top: 2.5rem;
@@ -1059,9 +1088,37 @@ code {
   .timeline-item__content h3 {
     font-size: 1.75rem;
   }
-  .section--tight .project-grid {
+}
+
+.section--tight .project-grid {
   max-width: 1100px;
   margin: 0 auto;
   justify-content: center;
 }
+
+/* Additional breakpoint to catch large displays when user resizes window
+   to approximately half-screen (common large-monitor widths like 2560px
+   -> half is 1280px). This ensures CTMF grids collapse and images stay
+   visible at those widths. */
+@media (max-width: 1400px) {
+  .ctmf-stack,
+  .ctmf-stack .ctmf-rich,
+  .ctmf-rich {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ctmf-rich > div {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .ctmf-rich img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .two-up {
+    grid-template-columns: 1fr;
+  }
 }

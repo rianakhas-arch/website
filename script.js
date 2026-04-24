@@ -60,7 +60,10 @@ if (revealItems.length > 0) {
         });
       },
       {
-        threshold: 0.18,
+        // Use a low threshold so tall sections still reveal on shorter
+        // or half-screen viewports where a large intersection ratio is
+        // hard to reach before the user scrolls past the trigger point.
+        threshold: 0.01,
         rootMargin: "0px 0px -8% 0px"
       }
     );
